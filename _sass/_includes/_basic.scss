@@ -1,0 +1,179 @@
+// - - - - - - - - - - - - - - - - - -
+
+// Basics
+
+// - - - - - - - - - - - - - - - - - -
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Basics
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: $background-color;
+	font-family: $font-family;
+	font-weight: $regular-weight;
+	font-style: normal;
+	line-height: 1;
+	color: $text-color;
+}
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Typography
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family;
+	color: $text-color;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+h1, .h1 {
+	font-size: $h1-small;
+	font-weight: $h1-weight;
+
+	@include mq(tabletp) {
+		font-size: $h1-medium;
+	}
+
+	@include mq(laptop) {
+		font-size: $h1-large;
+	}
+}
+
+h2, .h2 {
+	font-size: $h2-small;
+	font-weight: $h2-weight;
+
+	@include mq(tabletp) {
+		font-size: $h2-medium;
+	}
+
+	@include mq(laptop) {
+		margin-top: 40px;
+		font-size: $h2-large;
+	}
+}
+
+h3, .h3 {
+	font-size: $h3-small;
+	font-weight: $h3-weight;
+
+	@include mq(tabletp) {
+		font-size: $h3-medium;
+	}
+
+	@include mq(laptop) {
+		margin-top: 40px;
+		font-size: $h3-large;
+	}
+}
+
+h4, .h4 {
+	font-size: $h4-small;
+	font-weight: $h4-weight;
+
+	@include mq(tabletp) {
+		font-size: $h4-medium;
+	}
+
+	@include mq(laptop) {
+		font-size: $h4-large;
+	}
+}
+
+h5, .h5 {
+	font-size: $h5-small;
+	font-weight: $h5-weight;
+
+	@include mq(tabletp) {
+		font-size: $h5-medium;
+	}
+
+	@include mq(laptop) {
+		font-size: $h5-large;
+	}
+}
+
+h6, .h6 {
+	font-size: $h6-small;
+	font-weight: $h6-weight;
+
+	@include mq(tabletp) {
+		font-size: $h6-medium;
+	}
+
+	@include mq(laptop) {
+		font-size: $h6-large;
+	}
+}
+
+p, ul, ol {
+	font-size: $p-small;
+	font-weight: $p-weight;
+
+	@include mq(tabletp) {
+		font-size: $p-medium;
+	}
+
+	@include mq(laptop) {
+		font-size: $p-large;
+	}
+
+	strong {
+		font-weight: $bold-weight;
+	}
+}
+
+ul, ol {
+	list-style-position: inside;
+}
+
+blockquote {
+	margin-top: 15px;
+	border-left: 2px solid $text-color;
+	padding: 10px 0 10px 20px;
+	font-size: $blockquote-small;
+	font-weight: $blockquote-weight;
+
+	@include mq(tabletp) {
+		border-left-width: 3px;
+		padding: 15px 0 15px 30px;
+		font-size: $blockquote-medium;
+	}
+
+	@include mq(laptop) {
+		border-left-width: 4px;
+		padding: 20px 0 20px 40px;
+		font-size: $blockquote-large;
+	}
+
+	p {
+		font-size: $blockquote-small;
+		font-weight: $blockquote-weight;
+
+		@include mq(tabletp) {
+			font-size: $blockquote-medium;
+		}
+
+		@include mq(laptop) {
+			font-size: $blockquote-large;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $text-color;
+	font-weight: $bold-weight;
+	@include transition(all 0.15s ease-in-out);
+
+	&:hover {
+		color: $accent-color;
+	}
+}

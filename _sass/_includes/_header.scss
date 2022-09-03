@@ -141,6 +141,8 @@
 }
 
 .menu__list__item__link {
+	font-size: $menu-small;
+	font-weight: $menu-weight;
 	color: $header-text-color;
 	padding: 10px 0;
 
@@ -150,11 +152,16 @@
 
 	@include mq(tabletp) {
 		padding: 0 0 3px;
+		font-size: $menu-medium;
 		color: $header-text-color;
 
 		&:hover {
 			color: $accent-color;
 		}
+	}
+
+	@include mq(laptop) {
+		font-size: $menu-large;
 	}
 	
 	&.active-link {
