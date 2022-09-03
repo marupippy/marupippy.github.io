@@ -1,0 +1,31 @@
+.socials {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.socials__item {
+	display: inline-block;
+	margin-left: 2px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.socials__item__link {
+	font-size: 25px;
+	line-height: 1;
+	color: $background-color;
+	padding: 5px;
+
+	@include mq(tabletp) {
+		font-size: 30px;
+		padding: 10px;
+	}
+
+	&:hover {
+		color: rgba($color: $background-color, $alpha: 0.8);
+	}
+}

@@ -20,6 +20,9 @@ $header-background-color: #6CAFDE;
 $header-text-color: white;
 $header-accent-color: white;
 
+$footer-background-color: #FF5784;
+$footer-text-color: white;
+
 // Fonts
 $font-family: 'Roboto';
 $regular-weight: 300;
@@ -77,4 +80,6 @@ $button-weight: 300;
 @import "_includes/_basic";
 @import "_includes/_banner";
 @import "_includes/_header";
+@import "_includes/_footer";
+@import "_includes/_socials";
 @import "_includes/_portfolio";
