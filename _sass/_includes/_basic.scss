@@ -177,3 +177,24 @@ a {
 		color: $accent-color;
 	}
 }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Content
+
+.content {
+	margin-top: 20px;
+
+	@include mq(laptop) {
+		margin-top: 40px;
+	}
+}
+
+.content__wrap {
+	position: relative;
+	margin-left: 20px;
+	margin-right: 20px;
+
+	@include mq(laptop) {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}

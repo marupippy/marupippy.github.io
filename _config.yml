@@ -1,2 +1,12 @@
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site: Van Vu
+
+url: ""
+baseurl: ""
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  projects:
+    output: true
+    permalink: /portfolio/:slug

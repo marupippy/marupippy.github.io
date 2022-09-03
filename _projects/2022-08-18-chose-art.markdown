@@ -1,0 +1,7 @@
+---
+layout: page
+title: Chose Art
+date: 2022-08-18
+---
+
+### Chose Art
