@@ -6,3 +6,18 @@ layout: default
 	{% include banner.html %}
 	{{ content }}
 </section>
+
+<section class="content">
+	<div class="content__wrap">
+		{% assign projects = site.projects | reverse %}
+		{% for project in projects limit:3 %}
+			<a href="{{ project.url | relative_url }}">
+                <div class="portfolio__project">
+				<h2>{{ project.title }}</h2>
+                </div>
+			</a>
+		{% endfor %}
+
+		<a href="{{ "/portfolio" | relative_url }}" class="button button--small">See More</a>
+	</div>
+</section>

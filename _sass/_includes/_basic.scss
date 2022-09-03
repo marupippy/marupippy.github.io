@@ -178,13 +178,91 @@ a {
 	}
 }
 
+.button {
+	display: inline-block;
+	padding: 9px 10px 10px;
+	font-family: $font-family;
+	font-size: 13px;
+	font-weight: $button-weight;
+	line-height: 1;
+	border: 2px solid $accent-color;
+	background: $accent-color;
+	color: $background-color;
+	cursor: pointer;
+
+	@include mq(tabletp) {
+		padding: 11px 20px 12px;
+		font-size: 15px;
+	}
+
+	&:hover {
+		background: adjust-hue($accent-color,15%);
+		border-color: adjust-hue($accent-color,15%);
+		color: $background-color;
+	}
+
+	svg {
+		margin-right: 5px;
+
+		&:last-child {
+			margin-right: 0;
+			margin-left: 5px;
+		}
+
+		@include mq(tabletp) {
+			margin-right: 8px;
+
+			&:last-child {
+				margin-right: 0;
+				margin-left: 8px;
+			}
+		}
+	}
+}
+
+.button--large {
+	padding: 15px 20px 16px;
+	font-size: 13px;
+
+	@include mq(tabletp) {
+		padding: 19px 40px 20px;
+		font-size: 17px;
+	}
+}
+
+.button--light {
+	background: transparent;
+	border-color: $text-color;
+	color: $text-color;
+
+	&:hover {
+		background: $accent-color;
+		border-color: $accent-color;
+		color: $background-color;
+	}
+}
+
+.button--header {
+	background: transparent;
+	border-color: $header-text-color;
+	color: $header-text-color;
+
+	&:hover {
+		background: $header-text-color;
+		border-color: $header-text-color;
+		color: $accent-color;
+	}
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Content
 
 .content {
 	margin-top: 20px;
+	margin-bottom: 20px;
 
 	@include mq(laptop) {
 		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 }
 
