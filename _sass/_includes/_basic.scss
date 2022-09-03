@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 h1, .h1 {
 	font-size: $h1-small;
 	font-weight: $h1-weight;
+	text-align: center;
 
 	@include mq(tabletp) {
 		font-size: $h1-medium;
@@ -47,8 +48,10 @@ h1, .h1 {
 }
 
 h2, .h2 {
+	margin-top: 30px;
 	font-size: $h2-small;
 	font-weight: $h2-weight;
+	text-align: center;
 
 	@include mq(tabletp) {
 		font-size: $h2-medium;
@@ -61,6 +64,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
+	margin-top: 30px;
 	font-size: $h3-small;
 	font-weight: $h3-weight;
 
@@ -75,6 +79,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
+	margin-top: 25px;
 	font-size: $h4-small;
 	font-weight: $h4-weight;
 
@@ -88,6 +93,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
+	margin-top: 15px;
 	font-size: $h5-small;
 	font-weight: $h5-weight;
 
@@ -101,8 +107,10 @@ h5, .h5 {
 }
 
 h6, .h6 {
+	margin-top: 15px;
 	font-size: $h6-small;
 	font-weight: $h6-weight;
+	text-align: center;
 
 	@include mq(tabletp) {
 		font-size: $h6-medium;
@@ -114,8 +122,10 @@ h6, .h6 {
 }
 
 p, ul, ol {
+	margin-top: 15px;
 	font-size: $p-small;
 	font-weight: $p-weight;
+	line-height: $p-line-height;
 
 	@include mq(tabletp) {
 		font-size: $p-medium;
@@ -176,6 +186,22 @@ a {
 	&:hover {
 		color: $accent-color;
 	}
+}
+
+table {
+	width: 100%;
+	margin: 20px auto;
+
+	th, td {
+		width:150px;
+		text-align:center;
+		padding:5px
+	}
+}
+
+img {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .button {
@@ -257,22 +283,24 @@ a {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Content
 
 .content {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	padding: 20px;
 
 	@include mq(laptop) {
-		margin-top: 40px;
-		margin-bottom: 40px;
+		padding: 40px;
 	}
 }
 
-.content__wrap {
-	position: relative;
-	margin-left: 20px;
-	margin-right: 20px;
+.content__header {
+	max-width: 1360px;
+	margin: auto;
+	padding-bottom: 20px;
 
 	@include mq(laptop) {
-		margin-left: 40px;
-		margin-right: 40px;
+		padding-bottom: 40px;
 	}
+}
+
+.content__body {
+	max-width: 800px;
+	margin: auto;
 }

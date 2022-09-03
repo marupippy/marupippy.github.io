@@ -3,9 +3,12 @@
 }
 
 .portfolio__project {
-    width: 100%;
     max-width: 1360px;
-    margin: auto;
+	margin: auto;
     margin-bottom: 20px;
     background-color: #D9F0D6;
+
+    img {
+        padding: 0px;
+    }
 }
