@@ -1,0 +1,1 @@
+rm js/pip-min.js && uglifyjs js/pip.js >> js/pip-min.js
