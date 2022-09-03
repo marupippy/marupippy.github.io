@@ -23,3 +23,38 @@
     max-height: 100%;
     max-width: 500px;
 }
+
+.banner__content {
+    position: relative;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+    max-width: 800px;
+
+    @include mq(laptop) {
+        position: absolute;
+        left: 0; 
+        right: 0;
+        top: 0;
+	}
+}
+
+.banner__title {
+    color: black;
+    text-align: center;
+
+    @include mq(laptop) {
+		color: white;
+	}
+}
+
+.banner__description {
+    color: black;
+    text-align: center;
+
+    @include mq(laptop) {
+		color: white;
+	}
+}

@@ -9,3 +9,8 @@ menu_settings:
       url: '/projects'
     - title: 'About'
       url: '/about'
+
+
+banner_settings:
+  title: "Hey, I'm Van Vu"
+  description: "A UX designer based out of Italy believing that human-centred design creates meaningful products and services."
