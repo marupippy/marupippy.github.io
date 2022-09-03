@@ -87,6 +87,16 @@
 	span {
 		background-color: transparent !important;
 	}
+
+	span:before {
+		@include rotate(45);
+		top: 0px;
+	}
+
+	span:after {
+		@include rotate(-45);
+		top: 0px;
+	}
 }
 
 .menu__wrap {
@@ -101,6 +111,8 @@
 
 	visibility: hidden;
 	opacity: 0;
+	
+	@include transition(all 0.1s);
 
 	@include mq(tabletp) {
 		position: relative;
@@ -128,11 +140,17 @@
 	}
 }
 
+.menu--open .menu__list {
+	text-align: center;
+	padding: 100px;
+}
+
 .menu__list__item {
+	padding: 0px;
 
 	@include mq(tabletp) {
 		display: inline-block;
-		margin-left: 20px;
+		margin-left: 40px;
 
 		&:first-child {
 			margin-left: 0;
@@ -140,8 +158,12 @@
 	}
 }
 
+.menu--open .menu__list__item {
+	padding: 5px;
+}
+
 .menu__list__item__link {
-	font-size: $menu-small;
+	font-size: $menu-collapsed;
 	font-weight: $menu-weight;
 	color: $header-text-color;
 	padding: 10px 0;
