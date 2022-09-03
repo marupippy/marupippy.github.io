@@ -2,17 +2,17 @@
     position: relative;
     top: 0;
     left: 0;
-    background-color: #6CAFDE;
+    background-color: $banner-background-color;
 }
 
-.background {
+.banner__background {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.logo {
+.banner__logo {
     position: absolute;
     left: 0; 
     right: 0; 
