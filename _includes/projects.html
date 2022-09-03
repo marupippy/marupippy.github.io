@@ -1,0 +1,9 @@
+{% assign projects = site.projects | reverse %}
+{% for project in projects limit:include.limit %}
+    <a href="{{ project.url | relative_url }}">
+        <div class="portfolio__project">
+        {% assign image = project.image | relative_url %}
+        <img src="{{ image }}">
+        </div>
+    </a>
+{% endfor %}

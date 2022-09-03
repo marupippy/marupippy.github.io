@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: project
 title: Chose Art
+description: 
+image: assets/projects/chose-art/banner.jpg
 date: 2022-08-18
 ---
 
