@@ -37,6 +37,7 @@ h1, .h1 {
 	font-size: $h1-small;
 	font-weight: $h1-weight;
 	text-align: center;
+	line-height: $h1-line-height;
 
 	@include mq(tabletp) {
 		font-size: $h1-medium;
@@ -52,6 +53,7 @@ h2, .h2 {
 	font-size: $h2-small;
 	font-weight: $h2-weight;
 	text-align: center;
+	line-height: $h2-line-height;
 
 	@include mq(tabletp) {
 		font-size: $h2-medium;
@@ -67,6 +69,7 @@ h3, .h3 {
 	margin-top: 30px;
 	font-size: $h3-small;
 	font-weight: $h3-weight;
+	line-height: $h3-line-height;
 
 	@include mq(tabletp) {
 		font-size: $h3-medium;
@@ -82,6 +85,7 @@ h4, .h4 {
 	margin-top: 25px;
 	font-size: $h4-small;
 	font-weight: $h4-weight;
+	line-height: $h4-line-height;
 
 	@include mq(tabletp) {
 		font-size: $h4-medium;
@@ -96,6 +100,7 @@ h5, .h5 {
 	margin-top: 15px;
 	font-size: $h5-small;
 	font-weight: $h5-weight;
+	line-height: $h5-line-height;
 
 	@include mq(tabletp) {
 		font-size: $h5-medium;
@@ -111,6 +116,7 @@ h6, .h6 {
 	font-size: $h6-small;
 	font-weight: $h6-weight;
 	text-align: center;
+	line-height: $h6-line-height;
 
 	@include mq(tabletp) {
 		font-size: $h6-medium;
