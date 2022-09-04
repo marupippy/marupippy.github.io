@@ -10,3 +10,14 @@ collections:
   projects:
     output: true
     permalink: /portfolio/:slug
+
+author:
+  name: Van Vu
+  image: https://vanvudesign.com/assets/profile.jpg
+social:
+  name: Van Vu
+  links:
+    - https://www.instagram.com/pippymaru
+
+plugins:
+  - jekyll-seo-tag
