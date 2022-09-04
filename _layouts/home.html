@@ -4,13 +4,10 @@ layout: default
 
 <section>
 	{% include banner.html %}
-	{{ content }}
 </section>
 
 <section class="content">
-	<div class="content__wrap">
-		{% include projects.html limit=3 %}
-
-		<a href="{{ "/portfolio" | relative_url }}" class="button button--small">See More</a>
+	<div class="content__body">
+		{{ content }}
 	</div>
 </section>
