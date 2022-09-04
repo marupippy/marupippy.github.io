@@ -8,11 +8,15 @@
 		background: $header-dark-text-color;
 	}
 
+	.header__logo {
+		filter: invert(100%);
+	}
+
 	a {
 		color: $header-dark-text-color;
 
 		&:hover {
-			color: $header-dark-accent-color;
+			color: rgba($color: $header-dark-text-color, $alpha: 0.8);
 		}
 		
 		&.active-link {
@@ -40,14 +44,16 @@
 	}
 
 	.header__logo {
-		filter: invert(100%);
+		// Change a black SVG to another color
+		// https://codepen.io/sosuke/pen/Pjoqqp
+		filter: invert(73%) sepia(23%) saturate(1865%) hue-rotate(172deg) brightness(91%) contrast(95%);
 	}
 
 	a {
 		color: $header-light-text-color;
 
 		&:hover {
-			color: $header-light-accent-color;
+			color: rgba($color: $header-light-text-color, $alpha: 0.8);
 		}
 
 		&.active-link {
