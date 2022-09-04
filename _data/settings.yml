@@ -1,7 +1,7 @@
 basic_settings:
   site_title: Van Vu
   logo_image: /assets/logo.svg
-  favicon_image: /assets/favicon.png
+  favicon_image: /assets/favicon.ico
 
 menu_settings:
   menu_items:
