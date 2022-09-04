@@ -211,8 +211,8 @@ img {
 	font-size: 13px;
 	font-weight: $button-weight;
 	line-height: 1;
-	border: 2px solid $accent-color;
-	background: $accent-color;
+	border: 2px solid $button-color;
+	background: $button-color;
 	color: $background-color;
 	cursor: pointer;
 
@@ -222,8 +222,8 @@ img {
 	}
 
 	&:hover {
-		background: adjust-hue($accent-color,15%);
-		border-color: adjust-hue($accent-color,15%);
+		background: adjust-hue($button-color,15%);
+		border-color: adjust-hue($button-color,15%);
 		color: $background-color;
 	}
 
