@@ -2,7 +2,7 @@
 
 {% include head.html %}
 
-<body>
+<body data-site-url="{{ site.url }}" data-page-url="{{ page.url | replace: 'index.html', '' }}">
 	{% include header.html %}
 	{{ content }}
 	{% include footer.html %}
