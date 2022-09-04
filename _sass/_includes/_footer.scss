@@ -1,10 +1,35 @@
 .footer {
 	margin-top: 20px;
-	background-color: $footer-background-color;
 
 	.wrap {
 		max-width: 100%;
 		padding: 0 20px;
+	}
+}
+
+.footer-dark {
+	background-color: $footer-dark-background-color;
+	color: $footer-dark-text-color;
+
+	a {
+		&:hover {
+			color: $footer-dark-text-color;
+		}
+	}
+}
+
+.footer-light {
+	background-color: $footer-light-background-color;
+	color: $footer-light-text-color;
+
+	a {
+		&:hover {
+			color: $footer-dark-text-color;
+		}
+	}
+
+	.socials {
+		filter: invert(100%);
 	}
 }
 
@@ -14,23 +39,16 @@
 }
 
 .footer__text {
-	color: $footer-text-color;
 	font-weight: $bold-weight;
 }
 
 .footer__copyright {
 	display: block;
 	font-size: 13px;
-	color: $footer-text-color;
 
 	a {
 		margin-left: 10px;
-		color: $text-color;
 		font-weight: $regular-weight;
-
-		&:hover {
-			color: $footer-text-color;
-		}
 	}
 
 	span {

@@ -274,18 +274,6 @@ img {
 	}
 }
 
-.button--header {
-	background: transparent;
-	border-color: $header-text-color;
-	color: $header-text-color;
-
-	&:hover {
-		background: $header-text-color;
-		border-color: $header-text-color;
-		color: $accent-color;
-	}
-}
-
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Content
 
 .content {

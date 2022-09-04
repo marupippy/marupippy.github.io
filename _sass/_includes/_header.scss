@@ -1,12 +1,74 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header
 
-.header {
-	background-color: $header-background-color;
+.header-dark {
+	color: $header-dark-text-color;
+	background-color: $header-dark-background-color;
 
-	.wrap {
-		max-width: 100%;
-		padding: 0 20px;
+	span, span:before, span:after {
+		background: $header-dark-text-color;
 	}
+
+	a {
+		color: $header-dark-text-color;
+
+		&:hover {
+			color: $header-dark-accent-color;
+		}
+		
+		&.active-link {
+			color: $header-dark-accent-color;
+		}
+	}
+
+	.menu__wrap {
+		background: rgba($header-dark-background-color,0.95);
+	}
+
+	.menu--open .menu__toggle__icon {
+		span:before, span:after {
+			background: $header-dark-text-color !important;
+		}
+	}
+}
+
+.header-light {
+	color: $header-light-text-color;
+	background-color: $header-light-background-color;
+
+	span, span:before, span:after {
+		background: $header-light-text-color;
+	}
+
+	.header__logo {
+		filter: invert(100%);
+	}
+
+	a {
+		color: $header-light-text-color;
+
+		&:hover {
+			color: $header-light-accent-color;
+		}
+
+		&.active-link {
+			color: $header-light-accent-color;
+		}
+	}
+
+	.menu__wrap {
+		background: rgba($header-light-background-color,0.95);
+	}
+
+	.menu--open .menu__toggle__icon {
+		span:before, span:after {
+			background: $header-light-text-color !important;
+		}
+	}
+}
+
+.header__wrap {
+	max-width: 100%;
+	padding: 0 20px;
 }
 
 .header__logo {
@@ -44,7 +106,6 @@
 	cursor: pointer;
 	font-size: 15px;
 	line-height: 20px;
-	color: $header-text-color;
 	
 	@include mq(tabletp) {
 		display: none;
@@ -66,7 +127,6 @@
 		width: 100%;
 		height: 3px;
 		@include transition(all 0.1s);
-		background: $header-text-color;
 	}
 
 	span:before {
@@ -79,10 +139,6 @@
 }
 
 .menu--open .menu__toggle__icon {
-	span:before, span:after {
-		background: $header-text-color !important;
-	}
-		
 	span {
 		background-color: transparent !important;
 	}
@@ -105,7 +161,6 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba($header-background-color,0.95);
 	overflow: auto;
 
 	visibility: hidden;
@@ -164,33 +219,15 @@
 .menu__list__item__link {
 	font-size: $menu-collapsed;
 	font-weight: $menu-weight;
-	color: $header-text-color;
 	padding: 10px 0;
-
-	&:hover {
-		color: $header-accent-color;
-	}
 
 	@include mq(tabletp) {
 		padding: 0 0 3px;
 		font-size: $menu-medium;
-		color: $header-text-color;
-
-		&:hover {
-			color: $accent-color;
-		}
 	}
 
 	@include mq(laptop) {
 		font-size: $menu-large;
-	}
-	
-	&.active-link {
-		color: $header-accent-color;
-
-		@include mq(tabletp) {
-			color: $accent-color;
-		}
 	}
 }
 

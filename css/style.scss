@@ -14,14 +14,29 @@ $background-color: white;
 $text-color: #262626;
 $accent-color: #FFCDE6;
 
+// Banner
+
 $banner-background-color: #57B0E3;
 
-$header-background-color: #57B0E3;
-$header-text-color: white;
-$header-accent-color: white;
+// Header
 
-$footer-background-color: #57B0E3;
-$footer-text-color: white;
+$header-dark-background-color: #57B0E3;
+$header-dark-text-color: white;
+$header-dark-accent-color: white;
+
+$header-light-background-color: white;
+$header-light-text-color: black;
+$header-light-accent-color: black;
+
+// Footer
+
+$footer-dark-background-color: #57B0E3;
+$footer-dark-text-color: white;
+
+$footer-light-background-color: white;
+$footer-light-text-color: black;
+
+// Buttons
 
 $button-color: #57B0E3;
 

@@ -1,4 +1,10 @@
-<footer class="footer">
+{% if page.url == "/" %}
+{% assign color-style = "footer-dark" %}
+{% else %}
+{% assign color-style = "footer-light" %}
+{% endif %}
+
+<footer class="footer {{ color-style }}">
 	<div class="wrap">
 		<div class="footer__content">
 			<p class="footer__text">Van Vu Design</p>

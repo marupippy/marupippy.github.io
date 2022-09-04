@@ -1,6 +1,12 @@
-<header class="header">
+{% if page.url == "/" %}
+{% assign color-style = "header-dark" %}
+{% else %}
+{% assign color-style = "header-light" %}
+{% endif %}
 
-	<div class="wrap">
+<header class="{{ color-style }}">
+
+	<div class="header__wrap">
 
 		<a href="{{ site.baseurl }}/" class="header__logo">
 			<img src="{{ site.data.settings.basic_settings.logo_image | relative_url }}" class="header__logo__img">
@@ -22,5 +28,4 @@
 		</div>
 
 	</div>
-
 </header>
