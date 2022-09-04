@@ -1,0 +1,19 @@
+.about {
+    margin-top: 20px;
+
+    img {
+        margin: auto;
+    }
+
+    @include mq(tabletp) {
+        column-count: 2;
+        margin-top: 40px;
+	}
+}
+
+.about__content {
+    max-width: 358px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
