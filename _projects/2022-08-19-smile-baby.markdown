@@ -100,7 +100,7 @@ I conducted two rounds of usability studies. From the first study helped guide t
 
 The high-fidelity prototype followed the same user flow as the low-fidelity prototype, including design changes made after the usability study.
 
-![Hight-fidelity prototype](/assets/projects/smile-baby/hifi-protptype.jpg)
+![High-fidelity prototype](/assets/projects/smile-baby/hifi-protptype.jpg)
 
 ### 5. TEST
 

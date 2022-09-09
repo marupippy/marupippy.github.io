@@ -55,7 +55,7 @@ Olivia is a fashion designer living in Washinton, DC. She needs to practice Yin 
 
 Mapping Olivia’s user journey revealed how helpful it would be for users to have access to Yin Timer app.
 
-![User-Journey-map](/assets/projects/yin-yoga-timer/user-journey-map.jpg)
+![User Journey map](/assets/projects/yin-yoga-timer/user-journey-map.jpg)
 
 ###  3. IDEATE
 
@@ -69,7 +69,7 @@ I created the paper wireframwe to address the user pain point about creating the
 
 Follow the initial phase. I created the digital wireframes from the feedback and the research result.
 
-![Digital-wireframe](/assets/projects/yin-yoga-timer/digital-wireframe.jpg)
+![Digital wireframe](/assets/projects/yin-yoga-timer/digital-wireframe.jpg)
 
 ### 4. PROTOTYPE
 
@@ -79,7 +79,7 @@ I created low- fidelity prototype that I can use this primary process in usabili
 
 Here is the link for Low-fidelity prototype 
 
-![Low-fidelity](/assets/projects/yin-yoga-timer/low-fidelity.jpg)
+![Low fidelity prototype](/assets/projects/yin-yoga-timer/low-fidelity.jpg)
 
 #### Usability study: findings
 
@@ -98,14 +98,14 @@ I conducted two rounds of usability studies. From the first study helped guide t
 
 I like the balance constract between dark navy blue with light orange and pink.
 
-![Style-guide-Yin](/assets/projects/yin-yoga-timer/style-guide-yin.jpg)
+![Style guide](/assets/projects/yin-yoga-timer/style-guide-yin.jpg)
 
 #### Refining the design
 
 In the digital design I made "creat your own flow" button right on the homepage. After usability study I put more recommendation on the first space for user understand how a flow works.
 After usability study 2 I saw the frustration with selection pose and timer for user. I created it clean and clear to navigate by buttons "Save" and "Cancel".
 
-![Usability-study-yin](/assets/projects/yin-yoga-timer/usability-study-yin.jpg)
+![Usability study](/assets/projects/yin-yoga-timer/usability-study-yin.jpg)
 
 #### Mockup
 
@@ -116,7 +116,7 @@ After usability study 2 I saw the frustration with selection pose and timer for 
 The final high- fidelity prototype showed cleanser user flows to customize their own sequences.
 Yin Timer prototype
 
-![Hight-fide-prototype](/assets/projects/yin-yoga-timer/hight-fide-prototype.jpg)
+![Hight fide prototype](/assets/projects/yin-yoga-timer/hight-fide-prototype.jpg)
 
 ### 5. TEST
 
