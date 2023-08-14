@@ -13,10 +13,10 @@ menu_settings:
 
 banner_settings:
   title: "Hey, I'm Van Vu"
-  description: "A UX designer based out of Italy believing that human-centred design creates meaningful products and services."
+  description: "A UX designer based out of USA believing that human-centred design creates meaningful products and services."
 
 social_settings:
-  instagram_url: 'https://www.instagram.com/pippymaru/'
-  dribbble_url: 'https://www.instagram.com/pippymaru/'
-  behance_url: 'https://www.instagram.com/pippymaru/'
-  linkedin_url: 'https://www.instagram.com/pippymaru/'
+  instagram_url: ''
+  dribbble_url: ''
+  behance_url: ''
+  linkedin_url: ''
